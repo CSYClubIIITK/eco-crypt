@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eco Crypt</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='main.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="{{ url_for('static', filename='backend.js')}}"></script>
+  </head>
+  <body>
+    <nav class="navbar col-sm-12 lg-12 md-12">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="{{url_for('static', filename='CSC_Logo.png')}}" alt="Bootstrap" width="50" height="50">
+        </a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link"href="https://www.instagram.com/csyclub_iiitkottayam/"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/company/csyclub-iiitkottayam"><i class="bi bi-linkedin"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://discord.gg/4znS588gX7"><i class="bi bi-discord"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/CsyClub_IIITK"><i class="bi bi-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container" id="text">
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="label1">INPUT</span>
+        <textarea class="form-control" aria-label="INPUT" id= "text_input"></textarea>
+      </div>
+      <div class="row justify-content-center" id="buttons">
+        <span class="col-lg-6 md-3 sm-3 justify-content-center" id="btn1">
+        <button type="button" class="btn  btn-lg" id="bt1">Encrypt</button></span>
+        <span class="col-lg-6 md-3 sm-3 justify-content-center" id="btn2">
+        <button type="button" class="btn  btn-lg" id="bt2">Decrypt</button></span>
+      </div>
+    <div class="container" id="output">
+      <div class="input-group input-group-lg" id="txt2">
+        <span class="input-group-text" id="label2">OUTPUT</span>
+        <textarea class="form-control" aria-label="OUTPUT" readonly id="outputText"></textarea>
+      </div>
+    </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+.bi-instagram{
+    color: red;
+    font-size: x-large;
+
+}
+.bi-twitter{
+    color:rgb(131, 131, 244);
+    font-size: x-large;
+   
+}
+.bi-linkedin{
+    color: rgb(1, 1, 156);
+    font-size: x-large;
+    
+}
+.bi-discord{
+    color:blue;
+    font-size: x-large;
+}
+body{
+    background-image: url("images/new.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /* overflow-x: hidden; */
+
+}
+.navbar{
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    max-width: 99%;
+    border-radius: 35px;
+}
+.nav-item{
+    display: inline-block;
+    position: relative;
+}
+.nav li{
+    margin: auto;
+}
+.input-group{
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#buttons{
+    margin-top: 50px;
+}
+#text{
+    margin-top: 50px;
+}
+#bt1{
+    background-color:rgb(150, 241, 248);
+    font-family: 'Times New Roman', Times, serif;
+}
+#bt2{
+    background-color:rgb(2, 32, 34);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#bt1:hover{
+    background-color: rgb(2, 32, 34);
+    color: white;
+}
+#bt2:hover{
+    background-color: rgb(150, 241, 248);
+    color: black;
+}
+.form-control{
+    height: 200px;
+}
+#txt2{
+    margin-bottom: 50px;
+}
+#label2{
+    background-color: rgb(150, 241, 248);
+}
+#label1{
+    background-color: rgb(2, 32, 34);
+    color: white;
+    bottom: rgb(2, 32, 34);
+}
+#btn1{
+    /* border: solid; */
+    text-align: end;
+    padding-right: 100px;
+}
+#btn2{
+    /* border: solid; */
+    padding-left: 100px;
+}
+
+
+    
