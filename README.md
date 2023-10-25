@@ -11,8 +11,8 @@ Your creative minds are the key to making this project truly outstanding. Take o
 # Installation
 1. Download the code: `git clone git@github.com:CSYClubIIITK/eco-crypt.git`
 1. Move into the project folder: `cd eco-crypt`
-1. Install dependencies: `python3 -m pip install -r requirements.txt`
-1. Run the project: `python3 index.py`
+1. Install dependencies: `python -m pip install -r requirements.txt`
+1. Run the project: `python index.py`
 1. Visit `http://127.0.0.1:5000`
 
 # Setting up a development enviroment
