@@ -27,3 +27,4 @@ Your creative minds are the key to making this project truly outstanding. Take o
 - Cyber Security Club
 - [Darisi Priyatham](https://github.com/DPRIYATHAM)
 - [Vedanta S P](https://github.com/unworld11)
+- [Sarthak Gupta](https://github.com/sarthakg043)

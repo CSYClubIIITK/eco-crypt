@@ -2,11 +2,23 @@ from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
 
 nature_emojis = [
-    '🌿', '🌻', '🍃', '🌸', '🍂', '🌺',
-    '🍀', '🍁', '🍄', '🌹', '🌲', '🌴',
-    '🍅', '🍆', '🌽', '🍊', '🍎', '🍓',
-    '🍑', '🍍', '🍌', '🍉', '🍇', '🍈',
-    '🍐', '🍏'
+    
+    '🐆','🐴','🫎','🫏','🍂','🌺',
+    '🍀','🍁','🍄','🌹','🌲','🌴',
+    '🍅','🍆','🌽','🍊','🍎','🍓',
+    '🍐','🍏','🌟','⛅','🌈','🍑',
+    '🍍','🍌',
+    
+    '🍉','🦌','🦬','🐮','🐂','🐄',
+    
+    '🐷','🐩','🐺','🦊','🐱','🐈',
+    '🍃','🌸','🦄','🦓','🍇','🍈',
+    '🐯','🐅','🌿','🌻','🪵','🌳',
+    '🐍','💐','🦋','🐼','🌾','💧',
+    '⚡','🪷'
+    
+    # 🐆🐴🫎🫏🍂🌺🍀🍁🍄🌹🌲🌴🍅🍆🌽🍊🍎🍓🍐🍏🌟⛅🌈🍑🍍🍌🍉🦌🦬🐮🐂🐄🐷🐩🐺🦊🐱🐈🍃🌸🦄🦓🍇🍈🐯🐅🌿🌻🪵🌳🐍💐🦋🐼🌾💧⚡🪷
+    
 ]
 
 N = len(nature_emojis)
@@ -25,7 +37,7 @@ def encrypt_text():
         data = request.get_json()
         modified_text = ''
         for i in data:
-            modified_text += nature_emojis[(ord(i.lower()) - ord('a'))]
+            modified_text += nature_emojis[(ord(i) - ord('A'))]
         return jsonify({'modified_text': modified_text})
 
     except Exception as e:
@@ -37,7 +49,7 @@ def decrypt_text():
         data = request.get_json()
         modified_text = ''
         for i in data:
-            modified_text += chr(nature_emojis.index(i) + 97)
+            modified_text += chr(nature_emojis.index(i) + 65)
         return jsonify({'modified_text': modified_text})
 
     except Exception as e:
