@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     encrypt.addEventListener('click', () => {
         const inputText = document.getElementById('text_input').value;
-        const url = "https://ecocrypt.vercel.app/encrypt"; // add the vercel url
+        const url = "/encrypt"; // add the vercel url
 
         const requestParams = {
             method: 'POST',
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     decrypt.addEventListener('click', () => {
         const inputText = document.getElementById('text_input').value;
-        const url = "https://ecocrypt.vercel.app/decrypt"; // add the vercel url
+        const url = "/decrypt"; // add the vercel url
 
         const requestParams = {
             method: 'POST',
